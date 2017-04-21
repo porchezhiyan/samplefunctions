@@ -118,7 +118,8 @@ public class Main2Activity extends AppCompatActivity {
 
             int count=0;
 
-            String name,age,id;
+            String name;
+            int age,id;
 
             while(count<jsonArray.length()){
                 JSONObject jo =jsonArray.getJSONObject(count);

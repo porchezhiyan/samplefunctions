@@ -19,9 +19,10 @@ public class SubscribersAdaptor extends ArrayAdapter {
     List list = new ArrayList();
 
 
-    @Override
-    public void add(Object object) {
+
+    public void add(Subcribers object) {
         super.add(object);
+        list.add(object);
     }
 
     public SubscribersAdaptor(Context context, int resource) {
@@ -31,13 +32,13 @@ public class SubscribersAdaptor extends ArrayAdapter {
 
     @Override
     public int getCount() {
-        return super.getCount();
+        return list.size();
     }
 
 
     @Nullable
     @Override
     public Object getItem(int position) {
-        return super.getItem(position);
+        return list.get(position);
     }
 }
