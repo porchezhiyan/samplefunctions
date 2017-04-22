@@ -1,5 +1,11 @@
 package com.example.rmdec.sample2;
 
+import android.content.Context;
+import android.widget.Toast;
+
+import com.google.gson.annotations.SerializedName;
+
+
 /**
  * Created by rmdec on 21/04/17.
  */
@@ -8,10 +14,12 @@ public class Subcribers {
 
     String name;
     int age,id;
-    public Subcribers(String name,int id,int age){
+    public Subcribers(Context context,String name, int id, int age){
         this.setName(name);
         this.setAge(age);
         this.setId(id);
+        Toast.makeText(context,Integer.toString(age),Toast.LENGTH_LONG).show();
+
     }
 
 
